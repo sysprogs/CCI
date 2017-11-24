@@ -91,6 +91,10 @@
     <Compile Include="ValueMappings.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ControlAndDataFlowGraph\ControlAndDataFlowGraph.csproj">
+      <Project>{2596efb0-87ae-42ce-89eb-84f35d6350d2}</Project>
+      <Name>ControlAndDataFlowGraph</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MetadataHelper\MetadataHelper.csproj">
       <Project>{4A34A3C5-6176-49D7-A4C5-B2B671247F8F}</Project>
       <Name>MetadataHelper</Name>
@@ -106,10 +110,6 @@
     <ProjectReference Include="..\SourceModel\SourceModel.csproj">
       <Project>{4B0054FD-124A-4037-9965-BDB55E6BF389}</Project>
       <Name>SourceModel</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ControlAndDataFlowGraph\ControlAndDataFlowGraph.csproj">
-      <Project>{2596EFB0-87AE-42CE-89EB-84F35D6350D2}</Project>
-      <Name>ControlAndDataFlowGraph</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

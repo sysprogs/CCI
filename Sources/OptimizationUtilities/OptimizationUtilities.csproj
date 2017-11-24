@@ -82,6 +82,10 @@
     <Compile Include="StackEliminator.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ControlAndDataFlowGraph\ControlAndDataFlowGraph.csproj">
+      <Project>{2596efb0-87ae-42ce-89eb-84f35d6350d2}</Project>
+      <Name>ControlAndDataFlowGraph</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ILGenerator\ILGenerator.csproj">
       <Project>{08156C78-403A-4112-AD81-8646AC51CD2F}</Project>
       <Name>ILGenerator</Name>
@@ -101,10 +105,6 @@
     <ProjectReference Include="..\SourceModel\SourceModel.csproj">
       <Project>{4B0054FD-124A-4037-9965-BDB55E6BF389}</Project>
       <Name>SourceModel</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ControlAndDataFlowGraph\ControlAndDataFlowGraph.csproj">
-      <Project>{2596EFB0-87AE-42CE-89EB-84F35D6350D2}</Project>
-      <Name>ControlAndDataFlowGraph</Name>
     </ProjectReference>
     <ProjectReference Include="..\AnalyisUtilities\AnalysisUtilities.csproj">
       <Project>{E8B89C56-383A-4A1D-9EEE-E5FE9FC9DE03}</Project>
