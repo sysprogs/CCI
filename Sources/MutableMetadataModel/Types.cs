@@ -1591,7 +1591,7 @@ namespace Microsoft.Cci.MutableCodeModel {
   /// <summary>
   /// 
   /// </summary>
-  public sealed class NamespaceTypeDefinition : NamedTypeDefinition, INamespaceTypeDefinition, ICopyFrom<INamespaceTypeDefinition> {
+  public class NamespaceTypeDefinition : NamedTypeDefinition, INamespaceTypeDefinition, ICopyFrom<INamespaceTypeDefinition> {
 
     /// <summary>
     /// 

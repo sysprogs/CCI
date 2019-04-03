@@ -3568,7 +3568,7 @@ namespace Microsoft.Cci {
           case OperationCode.Brtrue_S:
           case OperationCode.Leave_S:
             //^ assume operation.Value is uint;
-            writer.WriteSbyte((sbyte)((uint)operation.Value-mbody.Position-1)); break;
+            writer.WriteSbyte((sbyte)(Convert.ToUInt32(operation.Value)-mbody.Position-1)); break;
           case OperationCode.Box:
           case OperationCode.Castclass:
           case OperationCode.Constrained_:

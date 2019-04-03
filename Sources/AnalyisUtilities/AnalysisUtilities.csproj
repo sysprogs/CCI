@@ -113,6 +113,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="ILMerge">
+      <HintPath>..\..\..\..\sysprogs\products\VisualGDB\_MergedBinaries\ILMerge.exe</HintPath>
+    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
