@@ -671,21 +671,21 @@ namespace Microsoft.Cci.MetadataReader.PEFile {
           this.RowSize,
           this.ClassOffset,
           typeDefRowId,
-          this.IsTypeDefOrRefRefSizeSmall
+          this.IsTypeDefTableRowRefSizeSmall
         );
       if (foundRowNumber == -1)
         return 0;
       int startRowNumber = foundRowNumber;
       while (
         startRowNumber > 0
-        && this.InterfaceImplTableMemoryReader.PeekReference((startRowNumber - 1) * this.RowSize + this.ClassOffset, this.IsTypeDefOrRefRefSizeSmall) == typeDefRowId
+        && this.InterfaceImplTableMemoryReader.PeekReference((startRowNumber - 1) * this.RowSize + this.ClassOffset, this.IsTypeDefTableRowRefSizeSmall) == typeDefRowId
       ) {
         startRowNumber--;
       }
       int endRowNumber = foundRowNumber;
       while (
         endRowNumber + 1 < this.NumberOfRows
-        && this.InterfaceImplTableMemoryReader.PeekReference((endRowNumber + 1) * this.RowSize + this.ClassOffset, this.IsTypeDefOrRefRefSizeSmall) == typeDefRowId
+        && this.InterfaceImplTableMemoryReader.PeekReference((endRowNumber + 1) * this.RowSize + this.ClassOffset, this.IsTypeDefTableRowRefSizeSmall) == typeDefRowId
       ) {
         endRowNumber++;
       }
